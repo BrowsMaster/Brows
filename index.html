@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ксения — Майстер Бровіст</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: url('https://i.postimg.cc/MTGjQHKk/photo-2025-06-27-22-20-03.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+    header, section, footer {
+      background-color: rgba(255,255,255,0.6);
+      backdrop-filter: blur(5px);
+      border-radius: 20px;
+      margin: 20px auto;
+      max-width: 1100px;
+      padding: 40px 20px;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4em;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .button {
+      background: #c99b66;
+      color: #fff;
+      padding: 14px 30px;
+      border: none;
+      border-radius: 30px;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    .button:hover {
+      background: #a77c4d;
+      transform: scale(1.05);
+    }
+    .slider-wrapper {
+      overflow-x: auto;
+      white-space: nowrap;
+      scroll-behavior: smooth;
+    }
+    .slider {
+      display: inline-flex;
+      gap: 15px;
+      animation: scrollSlider 60s linear infinite;
+    }
+    .slider img {
+      height: 240px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+    }
+    @keyframes scrollSlider {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    ul {
+      font-weight: bold;
+      line-height: 1.7;
+      list-style: none;
+      padding-left: 0;
+    }
+    ul li::before {
+      content: '✅';
+      margin-right: 10px;
+    }
+    .price-hover {
+      transition: transform 0.3s ease;
+    }
+    .price-hover:hover {
+      transform: scale(1.15);
+      z-index: 2;
+    }
+    @media (max-width: 768px) {
+      header, section, footer {
+        padding: 20px 10px;
+        margin: 10px;
+      }
+      h2 {
+        font-size: 1.6em;
+      }
+      header h1 {
+        font-size: 2em !important;
+      }
+      .slider img {
+        height: 160px;
+      }
+      .price-hover {
+        width: 100% !important;
+        max-width: 160px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;">
+  <div style="flex:1;min-width:260px;">
+    <h1 style="font-family:'Playfair Display',serif;font-size:2.8em;">kseniia_kotlubaieva</h1>
+    <p style="font-size:1.4em;">Майстер Бровіст/Ламімейкер</p>
+    <a href="#booking-form" class="button">Записатися</a>
+  </div>
+  <div><img src="https://i.postimg.cc/3Ns9KV5c/photo-2025-06-27-11-06-26.jpg" alt="Майстер" style="width:300px;border-radius:15px;"></div>
+</header>
+
+<section>
+  <h2>Портфоліо</h2>
+  <div class="slider-wrapper">
+    <div class="slider">
+      <img src="https://i.postimg.cc/VND7jS1m/1.jpg">
+      <img src="https://i.postimg.cc/76RmWpfR/2.jpg">
+      <img src="https://i.postimg.cc/SQBpXPDV/3.jpg">
+      <img src="https://i.postimg.cc/YqQBQxP7/4.jpg">
+      <img src="https://i.postimg.cc/Bns9pKWK/5.jpg">
+      <img src="https://i.postimg.cc/t4knT9qK/photo-2025-06-27-19-17-28.jpg">
+      <img src="https://i.postimg.cc/LXJr5kPr/7.jpg">
+      <img src="https://i.postimg.cc/Pf8gk4TD/8.jpg">
+      <img src="https://i.postimg.cc/rF7fRW1x/9.jpg">
+      <img src="https://i.postimg.cc/nLJT0JwL/10.jpg">
+      <img src="https://i.postimg.cc/0Q5n1CvR/11.jpg">
+      <img src="https://i.postimg.cc/W39nNJpD/12.jpg">
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Price</h2>
+  <div style="display:flex;justify-content:center;gap:20px;flex-wrap:wrap;">
+    <img class="price-hover" src="https://i.postimg.cc/44t7NgFw/photo-2025-06-28-09-38-33.jpg" width="160">
+    <img class="price-hover" src="https://i.postimg.cc/yYyDcTKZ/photo-2025-06-28-09-38-34.jpg" width="160">
+    <img class="price-hover" src="https://i.postimg.cc/3xrdBDrb/photo-2025-06-28-09-38-34-2.jpg" width="160">
+  </div>
+</section>
+
+<section>
+  <h2>Знижка 10%</h2>
+  <p style="text-align:center;font-size:1.2em;">Надішли слово <strong>Brows</strong> у Telegram або Instagram на номер<br><strong>+38 (050) 0707-142</strong><br>Промокод діє 24 години</p>
+</section>
+
+<section>
+  <h2>Чому обирають мене?</h2>
+  <ul>
+    <li>Індивідуальний підбір форми брів</li>
+    <li>Корекція воском або пінцетом</li>
+    <li>Фарбування хною або фарбою</li>
+    <li>Ламінування брів та вій</li>
+    <li>Гіпоалергенні матеріали</li>
+    <li>1000+ задоволених клієнток</li>
+    <li>Навчальні курси для майбутніх бровістів</li>
+  </ul>
+</section>
+
+<section id="booking-form">
+  <h2>Онлайн запис</h2>
+  <form style="max-width:500px;margin:0 auto;text-align:center;">
+    <input type="text" id="name" placeholder="Ваше ім’я" required style="width:100%;padding:15px;margin:12px 0;border-radius:12px;border:1px solid #ccc;font-size:1em;">
+    <input type="tel" id="phone" placeholder="Номер телефону" required style="width:100%;padding:15px;margin:12px 0;border-radius:12px;border:1px solid #ccc;font-size:1em;">
+    <button type="submit" class="button" style="margin-top:10px; font-size:1.1em;">Відправити</button>
+  </form>
+  <p id="response-message" style="text-align:center;margin-top:20px;font-weight:600;"></p>
+</section>
+
+<footer style="text-align:center;font-size:1em;">
+  <p>м. Харків, пр-т Героїв Харкова, 257</p>
+  <p>Instagram: @kseniia_kotlubaieva</p>
+  <p>Телефон: +38 (050) 0707-142</p>
+</footer>
+
+<script>
+  document.querySelector('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const name = document.getElementById('name').value;
+    const phone = document.getElementById('phone').value;
+    const message = `Нова заявка:%0AІм’я: ${name}%0AТелефон: ${phone}`;
+    const token = '7777146918:AAHewNdrZUnvTx_YwBDVvdmdSt8r2yfiQaE';
+    const chatId = '863041462';
+
+    fetch(`https://api.telegram.org/bot${token}/sendMessage?chat_id=${chatId}&text=${message}`)
+      .then(response => {
+        if (response.ok) {
+          document.getElementById('response-message').innerText = '✅ Заявку відправлено!';
+          document.querySelector('form').reset();
+        } else {
+          document.getElementById('response-message').innerText = '❌ Помилка. Спробуйте ще раз.';
+        }
+      })
+      .catch(() => {
+        document.getElementById('response-message').innerText = '⚠️ Помилка з’єднання.';
+      });
+  });
+</script>
+
+</body>
+</html>
